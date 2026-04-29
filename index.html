@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Premium concept website for Bruggsmiðjan Kaldi, Iceland's first craft brewery.">
+    <meta name="theme-color" content="#0b1012">
+    <meta property="og:title" content="Kalda - Bruggað við norðurhafið">
+    <meta property="og:description" content="Ný gagnvirk heimasíða fyrir Bruggsmiðjuna Kalda.">
+    <meta property="og:image" content="assets/kaldi-product.jpg">
+    <title>Kalda - Bruggað við norðurhafið</title>
+    <link rel="preload" href="assets/kaldi-product.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Kalda forsíða">
+        <span class="brand-mark">K</span>
+        <span>Kalda</span>
+      </a>
+      <nav class="site-nav" aria-label="Aðalvalmynd">
+        <a href="#bjorar">Bjórar</a>
+        <a href="#upplifun">Upplifun</a>
+        <a href="#thjonusta">Þjónusta</a>
+        <a href="#samband">Samband</a>
+      </nav>
+      <a class="nav-action" href="mailto:bruggsmidjan@bruggsmidjan.is?subject=Fyrirspurn%20um%20Kalda">Bóka kynningu</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-copy">
+          <p class="eyebrow">Árskógssandur / Eyjafjörður</p>
+          <h1 id="hero-title">Kalda</h1>
+          <p class="hero-lead">Fyrsta handverksbrugghús Íslands, bruggað með vatni úr Sólarfjalli og hráefni valið af nákvæmni.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#bjorar">
+              <span class="button-icon" aria-hidden="true">↓</span>
+              Skoða bjórana
+            </a>
+            <a class="button ghost" href="#upplifun">
+              <span class="button-icon" aria-hidden="true">✦</span>
+              Upplifa Kalda
+            </a>
+          </div>
+        </div>
+        <div class="hero-metrics" aria-label="Lykilatriði um Kalda">
+          <article>
+            <strong>01</strong>
+            <span>Fyrsta handverksbrugghús Íslands</span>
+          </article>
+          <article>
+            <strong>0%</strong>
+            <span>Enginn viðbættur sykur eða rotvarnarefni</span>
+          </article>
+          <article>
+            <strong>60</strong>
+            <span>Mínútna brugghúskynningar fyrir hópa</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="intro band" aria-labelledby="intro-title">
+        <div class="section-kicker">Kjarni vörumerkisins</div>
+        <h2 id="intro-title">Bruggað þar sem fjallavatn, sjávarloft og tékknesk hefð mætast.</h2>
+        <div class="intro-grid">
+          <p>Kaldi líður eins og heimsókn norður í Eyjafjörð: hreint, kalt, lifandi og án tilgerðar. Sagan byrjar í vatninu, færist í bruggketilinn og endar í glasi sem ber staðinn með sér.</p>
+          <div class="signature-list" aria-label="Sérkenni Kalda">
+            <span>Ógerilsneyddur</span>
+            <span>Án rotvarnarefna</span>
+            <span>Vatn úr Sólarfjalli</span>
+            <span>Tékknesk hefð</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-panel" aria-labelledby="story-title">
+        <div class="story-image">
+          <img src="assets/brewery-tanks.jpg" alt="Bruggtankar í Bruggsmiðjunni Kalda">
+        </div>
+        <div class="story-copy">
+          <p class="section-kicker">Brugghúsið</p>
+          <h2 id="story-title">Hráefnið fær að tala. Bruggið fylgir taktinum.</h2>
+          <p>Frá fyrsta frostkennda augnabliki tekur við dýpri saga: hráefni, aðferð, staðsetning, bragð og upplifanir sem tengja saman Kalda, Bjórböðin og Hótel Kalda.</p>
+          <div class="timeline" aria-label="Ferli Kalda">
+            <span>Vatn</span>
+            <span>Malt</span>
+            <span>Gerjun</span>
+            <span>Ófilterað smakk</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="beer-lab band dark" id="bjorar" aria-labelledby="beer-title">
+        <div class="section-heading">
+          <p class="section-kicker">Bjórarnir okkar</p>
+          <h2 id="beer-title">Gagnvirk bragðstofa fyrir Kalda.</h2>
+          <p>Hver bjór hefur sinn lit, sinn takt og sína bragðnótu.</p>
+        </div>
+
+        <div class="beer-stage" data-beer-stage>
+          <div class="beer-visual" aria-hidden="true">
+            <div class="bottle-shadow"></div>
+            <div class="bottle">
+              <div class="bottle-neck"></div>
+              <div class="bottle-body">
+                <span class="bottle-label" data-beer-label>Klassík</span>
+              </div>
+            </div>
+            <div class="flavor-radar">
+              <span data-axis="fresh"></span>
+              <span data-axis="malt"></span>
+              <span data-axis="bitter"></span>
+              <span data-axis="aroma"></span>
+            </div>
+          </div>
+
+          <div class="beer-copy">
+            <p class="beer-style" data-beer-style>Lager / tær og köld</p>
+            <h3 data-beer-name>Kalda Klassík</h3>
+            <p data-beer-description>Hreinn, stökkur og bjartur Kaldi með léttri maltsætu, ferskri beiskju og norðlenskri skýrleika.</p>
+            <div class="beer-notes" data-beer-notes>
+              <span>Ferskt</span>
+              <span>Korn</span>
+              <span>Mjúk beiskja</span>
+            </div>
+          </div>
+
+          <div class="beer-controls" role="list" aria-label="Veldu bjór">
+            <button class="beer-choice is-active" type="button" data-beer="classic">
+              <strong>Klassík</strong>
+              <span>stökkur lager</span>
+            </button>
+            <button class="beer-choice" type="button" data-beer="dark">
+              <strong>Dökkur</strong>
+              <span>ristað malt</span>
+            </button>
+            <button class="beer-choice" type="button" data-beer="ipa">
+              <strong>IPA</strong>
+              <span>humlar og sítrus</span>
+            </button>
+            <button class="beer-choice" type="button" data-beer="seasonal">
+              <strong>Árstíð</strong>
+              <span>takmörkuð upplifun</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="upplifun" aria-labelledby="experience-title">
+        <div class="immersive-image">
+          <img src="assets/north-lights.jpg" alt="Norðurljós yfir húsum Kalda á Norðurlandi">
+        </div>
+        <div class="experience-copy">
+          <p class="section-kicker">Upplifun</p>
+          <h2 id="experience-title">Ekki bara bjór. Heimsókn norður.</h2>
+          <p>Kuldinn, róin og gæðin halda áfram eftir fyrsta glas. Brugghúskynningar, Bjórböðin og Hótel Kalda mynda eina skýra leið norður.</p>
+          <div class="route-cards">
+            <a href="https://bjorbodin.is/" target="_blank" rel="noreferrer">
+              <span>01</span>
+              Bjórböðin
+            </a>
+            <a href="https://hotelkaldi.is/" target="_blank" rel="noreferrer">
+              <span>02</span>
+              Hótel Kaldi
+            </a>
+            <a href="mailto:bruggsmidjan@bruggsmidjan.is?subject=Kynning%20hjá%20Kalda">
+              <span>03</span>
+              Brugghúskynning
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services band" id="thjonusta" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="section-kicker">Okkar þjónusta</p>
+          <h2 id="services-title">Allt sem hópurinn, veislan eða vörumerkið þarf.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card" data-service="Kynning">
+            <span class="service-icon" aria-hidden="true">↗</span>
+            <h3>Kynningar</h3>
+            <p>Um 60 mínútna upplifun þar sem gestir sjá starfsemina og smakka bjórana beint af dælu.</p>
+          </article>
+          <article class="service-card" data-service="Sérmerking">
+            <span class="service-icon" aria-hidden="true">◇</span>
+            <h3>Sérmerking</h3>
+            <p>Kaldi fyrir brúðkaup, fyrirtæki, veislur og sérstök tilefni á flöskum eða dósum.</p>
+          </article>
+          <article class="service-card" data-service="Dæluleiga">
+            <span class="service-icon" aria-hidden="true">⌁</span>
+            <h3>Dæluleiga</h3>
+            <p>Bjórkútar og dæla fyrir viðburði, afmæli og samkomur þar sem Kaldi á að flæða vel.</p>
+          </article>
+          <article class="service-card" data-service="Beint frá býli">
+            <span class="service-icon" aria-hidden="true">⌂</span>
+            <h3>Beint frá býli</h3>
+            <p>Kaup í verksmiðjunni á Árskógssandi með beinni tengingu við upprunann.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking" id="samband" aria-labelledby="booking-title">
+        <div class="booking-media">
+          <img src="assets/tap-pour.jpg" alt="Kaldi hellt úr bjórdælu">
+        </div>
+        <div class="booking-panel">
+          <p class="section-kicker">Hafðu samband</p>
+          <h2 id="booking-title">Byrjum á réttu erindinu.</h2>
+          <div class="intent-grid" aria-label="Veldu erindi">
+            <button type="button" class="intent is-active" data-intent="Kynning fyrir hóp">Kynning</button>
+            <button type="button" class="intent" data-intent="Sérmerking á bjór">Sérmerking</button>
+            <button type="button" class="intent" data-intent="Leiga á bjórdælu">Dæluleiga</button>
+            <button type="button" class="intent" data-intent="Kaup beint frá verksmiðju">Beint frá býli</button>
+          </div>
+          <a class="button primary wide" data-mail-link href="mailto:bruggsmidjan@bruggsmidjan.is?subject=Kynning%20fyrir%20h%C3%B3p">
+            <span class="button-icon" aria-hidden="true">✉</span>
+            Senda fyrirspurn
+          </a>
+          <address>
+            <span>Öldugata 22, 621 Árskógssandur</span>
+            <a href="tel:+3544662505">(354) 466 - 2505</a>
+            <a href="mailto:bruggsmidjan@bruggsmidjan.is">bruggsmidjan@bruggsmidjan.is</a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Kalda</strong>
+        <span>Bruggsmiðjan Kaldi / 20+ / Njótið ábyrgt</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/bruggsmidjankaldi/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/bruggsmidjankaldi" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://www.bruggsmidjan.is/" target="_blank" rel="noreferrer">Gamli vefur</a>
+      </div>
+    </footer>
+  </body>
+</html>
